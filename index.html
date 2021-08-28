@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Credit Card Verification</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card">
+        <div class="card__row">
+            <div class="card__col">
+                <label class="title">Enter Card Details</label>
+
+            </div>
+        </div>
+
+        <div class="card__row">
+            <div class="card__col">
+                <label for="cardNumber" class="card__label">Card Number</label>
+                <input type="text" placeholder="xxxx-xxxx-xxxx-xxxx" class="card__input"
+                    onkeyup="update(this.value);" />
+            </div>
+        </div>
+
+        <div class="card__row">
+            <div class="card__col">
+                <label for="cardExpiry" class="card__label">Expiry Date</label><input type="text" class="card__input"
+                    id="cardExpiry" placeholder="xx/xx" />
+            </div>
+            <div class="card__col">
+                <label for="cardCcv" class="card__label">CCV</label><input type="text" class="card__input" id="cardCcv"
+                    placeholder="xxx" />
+            </div>
+            <!-- updted img directory -->
+            <img src="/assets/other.png" id="img" style="padding:10px;" /><br />
+            <br />
+            <script src="script.js"></script>
+
+        </div>
+        <span style="color:rgb(0, 0, 0);" id="valid" class="card__label">Card Status</span><br />
+
+        <button type="button" class="button">Submit Card</button>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
